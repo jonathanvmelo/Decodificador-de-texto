@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e codificador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_mobile.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+</head>
+
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <img src="./img/logo-alura.png" alt="logo Alura">
+            <h1>Codificador e Decodificador</h1>
+        </header>
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto"></textarea>
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+
+            <div id="output">
+                <img src="./img/boy-alura.png">
+                <h2>Nenhuma mensagem <br />encontrada</h2>
+                <span>Digite um texto que você deseja <br />criptografar ou descriptografar.</span>
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <div class="container-bnt">
+                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+                <button onclick="clean()" class="btn-limpar">Limpar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/jonathanvmelo/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/jonathanvmelo/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://github.com/jotabnu" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+        <h3>Desenvolvido por Jonathan Volpato de Melo</h3>
+    </footer>
+
+    <script src="./scrypt.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

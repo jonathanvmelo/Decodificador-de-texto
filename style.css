@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    background: linear-gradient(170deg, rgba(135, 171, 242, 0.8) 20%, rgba(95, 122, 177, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%),
+        linear-gradient(45deg, rgba(1, 22, 58, 0.8) 0%, rgba(75, 105, 161, 0.8) 50%, rgba(135, 159, 216, 0.8) 50%, rgba(187, 197, 218, 0.8) 100%) #0A3871;
+    width: 1440px;
+    height: 900px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho img {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.cabecalho h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 150%;
+    position: relative;
+    left: -350px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    color: #0A3871;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+    width: 400px;
+    height: 330px;
+}
+
+.input {
+    margin-top: 108px;
+    margin-left: 240px;
+    width: 380px;
+    height: 280px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    font-size: 20px;
+    color: #0A3871;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#input-texto {
+    width: 380px;
+    height: 280px;
+    padding: 5%;
+    resize: none;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;
+    outline: 0;
+}
+
+.input p {
+    background: url(./img/exclamation-mark-in-a-circle.png) no-repeat left center;
+    position: absolute;
+    top: 650px;
+    left: 220px;
+    width: 428px;
+    height: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.6;
+    text-indent: 7%;
+    display: inline-block;
+    align-items: baseline;
+    color: #96989a;
+}
+
+#output {
+    position: relative;
+    left: 400px;
+    bottom: 85px;
+    border: 3px solid white;
+    background: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 750px;
+    align-items: center;
+}
+
+#output img {
+    display: flex;
+    position: relative;
+    bottom: 450px;
+    padding: 32px;
+    max-width: 336px;
+    max-height: 304px;
+    width: 336px;
+    height: 304px;
+    top: 100px;
+}
+
+#output h2 {
+    position: relative;
+    bottom: 350px;
+    left: 25px;
+    color: #343A40;
+    width: 336px;
+    height: 58px;
+    padding: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 423px;
+}
+
+#output span {
+    position: absolute;
+    bottom: 180px;
+    left: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    width: 336px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 493px;
+    padding: 32px;
+    color: #495057;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px;
+    bottom: 180px;
+    margin-left: 10%;
+    cursor: pointer;
+    justify-content: space-between;
+    border: none;
+}
+
+.btn-criptografar {
+    left: 100px;
+    outline: none;
+    height: 67px;
+    text-align: center;
+    width: 340px;
+    border-radius: 24px;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    color: #D8DFE8;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+}
+
+.btn-criptografar:hover {
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-criptografar:active {
+    font-size: 16px;
+}
+
+.btn-descriptografar {
+
+    left: 600px;
+    outline: none;
+    height: 67px;
+    text-align: center;
+    width: 340px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+}
+
+.btn-descriptografar:hover {
+    cursor: pointer;
+    font-size: 20PX;
+}
+
+.btn-descriptografar:active {
+    font-size: 16px;
+}
+
+.btn-limpar {
+    outline: none;
+    height: 67px;
+    text-align: center;
+    width: 340px;
+    border-radius: 24px;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    color: #bcbfc2;
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 40px;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+}
+
+.btn-limpar:hover {
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-limpar:active {
+    font-size: 16px;
+}
+
+.btn-copiar {
+    text-align: center;
+    border: 2px solid #e5eaeb;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0A3871;
+    width: 150px;
+    height: 50px;
+    margin-top: 300px;
+    margin-left: 30%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-copiar:hover {
+    border: 2px solid #0A3871;
+    font-size: 16px;
+}
+
+.btn-copiar:active {
+    font-size: 14px;
+
+}
+
+.rodape {
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rodape h3 {
+    display: flex;
+    position: absolute;
+    top: 105px;
+    left: 45%;
+    font-size: 12px;
+    align-items: center;
+    color: #343A40;
+}
+
+.icons ion-icon {
+    position: relative;
+    top: 60px;
+    left: 47.5%;
+    width: 50px;
+    height: 25px;
+    color: #bcbfc2;
+}
+
+.icons ion-icon:hover {
+    color: #31373d;
+}

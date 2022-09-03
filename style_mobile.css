@@ -1,0 +1,232 @@
+@media screen and (max-width:850px) {
+
+    .cabecalho {
+        display: flex;
+        justify-content: left;
+        padding: 5%;
+    }
+
+    .cabecalho h1 {
+        font-size: 28px;
+        display: flex;
+        position: relative;
+        left: 250PX;
+        bottom: 151PX;
+
+    }
+
+    .cabecalho img {
+        position: absolute;
+        left: 5.21%;
+        right: 90.74%;
+        top: 6.25%;
+        bottom: 89.8%;
+
+    }
+
+
+
+    .container-input {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 2% 0 0 4%;
+    }
+
+
+    #input-texto {
+        position: absolute;
+        width: 688px;
+        height: 48px;
+        left: 40px;
+        top: 240px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+    }
+
+    .input p {
+
+        width: 328px;
+        height: 22px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-indent: 10%;
+        color: #aaaeb3;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: -40px;
+        top: 690px;
+
+    }
+
+    .btn-criptografar {
+        margin-left: -30px;
+    }
+
+    .btn-descriptografar {
+        position: absolute;
+        right: 100px;
+        left: 282px;
+    }
+
+    .btn-limpar {
+        position: absolute;
+        right: 100px;
+        left: 628px;
+    }
+
+    #output {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 988px;
+        height: 263px;
+        left: 40px;
+        top: 801px;
+    }
+
+    #output img {
+        display: none;
+    }
+
+    #output h2 {
+        display: flex;
+        position: absolute;
+        bottom: 170px;
+        left: 350px;
+        width: 924px;
+        height: 29px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin-bottom: 20px;
+    }
+
+    #output span {
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        left: 350px;
+        width: 624px;
+        height: 24px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    .rodape {
+        width: auto;
+        position: relative;
+        top: 350px;
+        left: -250px;
+
+
+
+
+
+
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .cabecalho {
+        display: inline-block;
+    }
+
+    .cabecalho img {
+        display: inline-block;
+        position: absolute;
+        right: 100px;
+    }
+
+    .cabecalho h1 {
+        display: none;
+    }
+
+    .input {
+        position: relative;
+        right: 250px;
+    }
+
+    .container-bnt {
+        display: block;
+    }
+
+    #output {
+        background: white;
+        width: auto;
+        height: 75%;
+        margin-top: 15%;
+    }
+
+    #input-texto {
+        width: auto;
+        height: 330px;
+        font-size: 20px;
+    }
+
+    #output img {
+        display: none;
+    }
+
+
+
+    .buttons {
+        width: auto;
+        height: 50px;
+        margin-left: 30%;
+        margin-top: 5%;
+
+    }
+
+    .input p {
+        font-size: 10px;
+    }
+
+    .rodape h3 {
+        font-size: 14px;
+    }
+
+
+}
