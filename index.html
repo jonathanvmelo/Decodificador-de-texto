@@ -1,49 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador e codificador</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style_mobile.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Fonts/all.css">
 
+    <title>Decodificador de Texto</title>
 </head>
 
-<body>
-    <main class="main container">
-        <header class="cabecalho">
-            <img src="./img/logo-alura.png" alt="logo Alura">
-            <h1>Codificador e Decodificador</h1>
-        </header>
-        <div class="container-input">
+<body class="light-theme">
+    <header>
+        <h1><img src="./img/logo-alura.png" alt="Logo Alura"></h1>
+        <h2>Codificador e Decodificar de Textos</h2>
+    </header>
+
+    <main>
+        <section class="input-section">
             <div class="input">
-                <textarea id="input-texto" placeholder="Digite seu texto"></textarea>
-                <p>Apenas letras minúsculas e sem acento.</p>
+                <textarea id="input-texto" placeholder="Digite seu Texto" cols="30" rows="10"></textarea>
+                <div class="alert">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p> Apenas letras minúsculas e sem acento.</p>
+
+                </div>
+
             </div>
+            <div class="buttons">
+                <button onclick="criptografar()" id="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" id="btn-descriptografar">Descriptografar</button>
+                <button onclick="clean()" id="btn-limpar">Limpar</button>
+            </div>
+        </section>
 
-
+        <section class="output-section">
             <div id="output">
-                <img src="./img/boy-alura.png">
-                <h2>Nenhuma mensagem <br />encontrada</h2>
-                <span>Digite um texto que você deseja <br />criptografar ou descriptografar.</span>
-            </div>
-        </div>
-
-
-        <div class="buttons">
-            <div class="container-bnt">
-                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
-                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
-                <button onclick="clean()" class="btn-limpar">Limpar</button>
-            </div>
-
-        </div>
+                <img src="./img/boy-alura.png" alt="sem mensagem" />
+                <div>
+                    <div>
+                        <h3>Nenhuma mensagem encontrada</h3>
+                        <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
+                    </div>
+                    <div class="messageEncrypt notAppear">
+                        <p id="message"></p>
+                    </div>
+        </section>
     </main>
 
-    <footer class="rodape">
+    <footer>
+
         <div class="icons">
             <a href="https://www.linkedin.com/in/jonathanvmelo/" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
