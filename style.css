@@ -76,7 +76,7 @@ main {
 }
 
 .input-section .input textarea:focus-visible {
-    border: 1px solid black;
+    border: 1px solid rgb(24, 24, 24);
 }
 .alert{
     display: flex;
