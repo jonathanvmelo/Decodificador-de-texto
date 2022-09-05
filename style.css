@@ -9,10 +9,10 @@ body {
     font-family: inter sans-serif;
     width: 100%;
     background: linear-gradient(170deg, rgba(45, 87, 173, 0.8) 20%, rgba(47, 89, 173, 0.5) 20%,
-            rgba(44, 63, 99, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(65, 107, 186, 0.8) 45%,
-            rgba(7, 39, 105, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(93, 118, 170, 0.5) 75%),
-        linear-gradient(45deg, rgba(51, 78, 132, 0.8) 0%, rgba(49, 69, 106, 0.8) 50%,
-            rgba(1, 11, 36, 0.8) 50%, rgba(190, 198, 215, 0.8) 100%) #17447b;
+            rgba(79, 121, 200, 0.5) 35%, rgba(33, 60, 110, 0.6) 35%, rgba(65, 107, 186, 0.8) 45%,
+            rgba(37, 75, 152, 0.5) 45%, rgba(59, 103, 192, 0.8) 75%, rgba(93, 118, 170, 0.5) 75%),
+        linear-gradient(45deg, rgba(51, 78, 132, 0.8) 0%, rgba(61, 107, 193, 0.8) 50%,
+            rgba(98, 131, 215, 0.8) 50%, rgba(190, 198, 215, 0.8) 100%) #17447b;
 }
 
 header {
@@ -30,7 +30,10 @@ header h2 {
     padding-left: 25px;
     font-size: 3.5rem;
     font-style: normal;
-    color: #0A3871;
+    color: #1d2024;
+    opacity: 0.9;
+    text-align: center;
+    margin-right: 400px;
 }
 
 main {
@@ -53,49 +56,46 @@ main {
 .input-section .input {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     gap: 10px;
-
 }
 
 .input-section .input textarea {
-    border: none;
-    border-radius: 10px;
+    border: 0 none;
     background: transparent;
     width: 95% auto;
     min-height: 45vh;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: rgb(41, 39, 39);
     padding: 2%;
-    outline: none;
-    background: transparent;
-    box-shadow: none;
-    border: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
     resize: none;
-}
-
-.input-section .input textarea:focus-visible {
-    border: 1px solid rgb(72, 71, 71);
+    border-color: transparent;
 }
 
 .alert {
+    margin-left: 15px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+.alert ion-icon {
+    width: 25px;
+    height: 25px;
+    color: #dc8b33;
+}
+
+
 
 .input-section .input p {
-    font-size: 0.75rem;
-    opacity: 0.6;
-    color: white;
-    text-indent: 4%;
-    width: 200px;
-
-}
-
-.input-section .input i {
-    opacity: 0.6;
-    color: #efef3f;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    color: #161718;
+    text-indent: 2%;
+    width: 220px;
 }
 
 .input-section .buttons {
@@ -117,6 +117,13 @@ main {
     font-size: 1.1rem;
     border: none;
     text-transform: uppercase;
+    font-weight: 600;
+}
+
+#btn-descriptografar {
+    background: #D8DFE8;
+    color: #0A3871;
+    font-weight: 600;
 }
 
 #btn-criptografar:hover {
@@ -132,6 +139,7 @@ main {
 #btn-descriptografar:hover {
     cursor: pointer;
     font-size: 20PX;
+    border: solid 2px #0A3871;
 }
 
 #btn-descriptografar:active {
@@ -139,7 +147,7 @@ main {
 }
 
 #btn-limpar:hover {
-    border: 2px solid #ffffff;
+    border: 2px solid #D8DFE8;
     font-size: 20px;
     cursor: pointer;
 }
@@ -150,14 +158,20 @@ main {
 
 .btn-copiar {
     cursor: pointer;
-    background: #6b7785;
-    color: #0A3871;
+    background: #0A3871;
+    color: #D8DFE8;
     border: 1px solid var(--color);
     border-radius: 22px;
     width: 60%;
-    height: 50px;
+    height: 60px;
     font-size: 1.1rem;
     text-transform: uppercase;
+}
+
+.btn-copiar:hover {
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .output-section {
@@ -169,27 +183,46 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-    background: #d7dfe9;
-    padding: 45px 10px;
+    border-radius: 32px;
+    background: linear-gradient(95deg, rgba(45, 87, 173, 0.8) 20%, rgba(47, 89, 173, 0.5) 20%,
+            rgba(79, 121, 200, 0.5) 35%, rgba(33, 60, 110, 0.6) 35%, rgba(65, 107, 186, 0.8) 45%,
+            rgba(37, 75, 152, 0.5) 45%, rgba(59, 103, 192, 0.8) 75%, rgba(93, 118, 170, 0.5) 75%),
+        linear-gradient(45deg, rgba(51, 78, 132, 0.8) 0%, rgba(61, 107, 193, 0.8) 50%,
+            rgba(98, 131, 215, 0.8) 50%, rgba(190, 198, 215, 0.8) 100%) #17447b;
+    padding: 20px 10px;
     width: 100%;
     color: #2d2e2f;
     border: none;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    height: 300px;
 }
 
-.output-section>textarea {
-    width: 300px;
+#output {
+    margin-top: 82px;
+    height: 600px;
+}
+
+.input-texto {
+    width: 380px;
+    height: 680px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    resize: none;
 }
 
 .output-section>div img {
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .output-section>div h3 {
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    height: 60px;
+}
+
+.output-mensagem {
+    margin-top: 30px;
 }
 
 footer {
@@ -239,6 +272,8 @@ footer h3 {
 }
 
 @media screen and (min-width: 1024px) {
+
+
     main {
         flex-direction: row;
         justify-content: space-evenly;
@@ -258,5 +293,26 @@ footer h3 {
 
     .input-section {
         width: 52%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header h2 {
+        display: none;
+    }
+
+    .output-section>div img {
+        display: none;
+    }
+
+    #output {
+        margin-top: 82px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    header h2 {
+        display: none;
     }
 }

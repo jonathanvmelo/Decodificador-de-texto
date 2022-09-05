@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
-
-
     <title>Decodificador de Texto</title>
 </head>
 
@@ -22,11 +20,10 @@
     <main>
         <section class="input-section">
             <div class="input">
-                <textarea id="input-texto" placeholder="Digite seu Texto" cols="30" rows="10"></textarea>
+                <textarea id="input-texto" placeholder="Digite seu Texto"></textarea>
                 <div class="alert">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <ion-icon name="alert-circle-outline"></ion-icon>
                     <p>Apenas letras minúsculas e sem acento.</p>
-
                 </div>
 
             </div>
@@ -41,7 +38,7 @@
             <div id="output">
                 <img src="./img/boy-alura.png" alt="sem mensagem" />
                 <div>
-                    <div>
+                    <div class="output-mensagem">
                         <h3>Nenhuma mensagem encontrada</h3>
                         <span>Digite um texto que você deseja criptografar ou descriptografar.</span>
                     </div>
